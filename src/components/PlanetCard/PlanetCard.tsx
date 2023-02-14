@@ -1,7 +1,9 @@
+import "./PlanetCard.css";
+
 const PlanetCard = () => {
   return (
     <li className="card-container">
-      <div>
+      <div className="planet-title">
         <p className="planet-name">Mercury</p>
         <button className="favorites-icon on off">
           <img
