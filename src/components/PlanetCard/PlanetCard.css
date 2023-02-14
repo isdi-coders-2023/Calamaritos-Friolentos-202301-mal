@@ -1,0 +1,61 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 494px;
+  height: 249px;
+  align-items: center;
+  color: #fafaff;
+  gap: 1rem;
+}
+
+.card-container li {
+  list-style: none;
+}
+.planet-name {
+  text-align: center;
+  font-size: 20px;
+
+  vertical-align: top;
+}
+
+.planet-img {
+  height: 15rem;
+  width: 15rem;
+}
+
+.favorites-icon {
+  background-color: none;
+  border: none;
+  color: #adadb7;
+}
+
+.view-more-button {
+  background-color: none;
+  border: none;
+  color: #fafaff;
+  font-size: 12px;
+}
+
+.planet__eslogan {
+  font-size: 12px;
+}
+
+.planet-card__info {
+  font-size: 14px;
+  color: #fafaff;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.planet-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.planet-title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
