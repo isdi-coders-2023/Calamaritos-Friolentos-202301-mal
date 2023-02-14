@@ -3,9 +3,6 @@ import { rest } from "msw";
 
 export const handlers = [
   rest.get(`https://api.api-ninjas.com/v1/planets`, (_req, res, ctx) => {
-    /* const { maxDistance } = req.url.searchParams.get(
-        "max_distance_light_year"
-      );*/
     return res(
       ctx.status(200),
       ctx.json([
