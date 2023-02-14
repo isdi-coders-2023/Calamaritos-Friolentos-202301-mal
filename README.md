@@ -1,3 +1,16 @@
+SPACE SAFARI
+
+Space Safari is an application that will allow the user to explore a series of planets. By interacting on them you will obtain information about that planet. The user will also have the possibility to bookmark his planets as favorite destinations. The user will also be able to add to his favorite planets: the number of travelers, stay and the type of ship in which he is going to travel.
+
+This project is built under the supervision of:
+
+- editor.config
+- sonar
+- husky
+- eslint
+- jest
+- prettier
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
