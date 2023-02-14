@@ -7,3 +7,14 @@
 ul {
   text-decoration: none;
 }
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: local("SpaceGrotesk"),
+    url(./assets/fonts/SpaceGrotesk-Regular.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"), url(./assets/fonts/Rubik-Regular.ttf) format(truetype);
+}
