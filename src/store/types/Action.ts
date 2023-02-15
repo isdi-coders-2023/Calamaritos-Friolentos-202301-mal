@@ -1,11 +1,11 @@
 import { Planet } from "../../api/planet.model";
 
 export enum ActionTypes {
-  GET_PLANETS = "listPlanets",
+  ADD_PLANETS = "listPlanets",
 }
 
 type PlanetAction = {
-  type: ActionTypes.GET_PLANETS;
+  type: ActionTypes.ADD_PLANETS;
   payload: Planet[];
 };
 

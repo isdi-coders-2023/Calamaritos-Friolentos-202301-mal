@@ -5,7 +5,7 @@ import { Planet } from "../../api/planet.model";
 describe("Given a new state for my ActionTypes.GET_PLANETS", () => {
   test("When change by useReducer, the state is change in ActionTypes.GET_PLANETS", () => {
     const previousPlanets: Planet[] = [];
-    const updateAction = { type: ActionTypes.GET_PLANETS, payload: [] };
+    const updateAction = { type: ActionTypes.ADD_PLANETS, payload: [] };
     const updateState = planetReducer(previousPlanets, updateAction);
     expect(updateState).toEqual([]);
   });
