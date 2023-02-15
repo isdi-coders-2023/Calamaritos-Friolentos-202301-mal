@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <PlanetContextProvider>
         <h1>hola</h1>
-        <h1>hola</h1>
+        <h2>adios</h2>
       </PlanetContextProvider>
     </div>
   );
