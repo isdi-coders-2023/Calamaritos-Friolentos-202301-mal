@@ -6,7 +6,7 @@ const planetReducer = (
   action: PlanetAction
 ): Planet[] => {
   switch (action.type) {
-    case ActionTypes.GET_PLANETS:
+    case ActionTypes.ADD_PLANETS:
       return [...previousPlanets, ...action.payload];
     default:
       return [...previousPlanets];
