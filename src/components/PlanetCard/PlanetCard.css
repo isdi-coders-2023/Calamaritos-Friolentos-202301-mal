@@ -51,11 +51,6 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-}
-
-.planet-title {
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
 }
