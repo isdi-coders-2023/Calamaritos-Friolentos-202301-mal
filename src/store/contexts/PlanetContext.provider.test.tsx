@@ -5,10 +5,10 @@ describe("Given a PlanetContextProvider", () => {
   test("Should render children", () => {
     render(
       <PlanetContextProvider>
-        <h1>hola</h1>
+        <h1>Test</h1>
       </PlanetContextProvider>
     );
-    const firstChildren = screen.getByText("hola");
+    const firstChildren = screen.getByText("Test");
 
     expect(firstChildren).toBeInTheDocument();
   });
