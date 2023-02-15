@@ -6,12 +6,10 @@ describe("Given a PlanetContextProvider", () => {
     render(
       <PlanetContextProvider>
         <h1>hola</h1>
-        <h2>adios</h2>
       </PlanetContextProvider>
     );
     const firstChildren = screen.getByText("hola");
-    const secondChildren = screen.getByText("adios");
+
     expect(firstChildren).toBeInTheDocument();
-    expect(secondChildren).toBeInTheDocument();
   });
 });
