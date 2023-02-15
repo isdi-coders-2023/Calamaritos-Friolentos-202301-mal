@@ -3,7 +3,7 @@ import PlanetContext from "./planetContext.context";
 import planetReducer from "../reducers/planetReducer";
 
 interface PlanetContextProviderProps {
-  children: JSX.Element[];
+  children: JSX.Element;
 }
 
 const PlanetContextProvider: FC<PlanetContextProviderProps> = ({
