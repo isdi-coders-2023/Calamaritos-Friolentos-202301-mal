@@ -1,6 +1,5 @@
 import React from "react";
 import { getSolarSystemPlanets } from "./api/planet.data";
-import "./App.css";
 import PlanetContextProvider from "./store/contexts/PlanetContext.provider";
 
 function App() {
