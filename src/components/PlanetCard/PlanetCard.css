@@ -8,41 +8,54 @@
 
 .card-container li {
   list-style: none;
+  display: flex;
+  justify-content: center;
 }
 .planet-name {
   text-align: center;
-  font-size: 20px;
-
+  font-size: 1.2rem;
+  font-family: "Space Grotesk", sans-serif;
   vertical-align: top;
+  margin-bottom: 2rem;
 }
 
 .planet-img {
   height: 15rem;
   width: 15rem;
+  padding-bottom: 1rem;
 }
 
 .favorites-icon {
-  background-color: none;
+  background-color: inherit;
   border: none;
   color: #adadb7;
+  margin-bottom: 2rem;
+  display: none;
 }
 
 .view-more-button {
-  background-color: none;
+  background-color: inherit;
   border: none;
   color: #fafaff;
-  font-size: 12px;
-}
-
-.planet__eslogan {
-  font-size: 12px;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  font-family: "Space Grotesk", sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 0.188rem;
 }
 
 .planet-card__info {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #fafaff;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.12rem;
+  font-family: "Space Grotesk", sans-serif;
+  margin-top: 2rem;
+  display: none;
+}
+
+.list__item {
+  font-weight: bolder;
 }
 
 .planet-title {
@@ -51,4 +64,14 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+@media (min-width: 600px) {
+  .view-more-button {
+    text-decoration: none;
+  }
+  .view-more-button:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.188rem;
+  }
 }
