@@ -1,17 +1,18 @@
 import React from "react";
-import { getSolarSystemPlanets } from "./api/planet.data";
 import PlanetContextProvider from "./store/contexts/PlanetContext.provider";
 import { RouterProvider } from "react-router-dom";
 import { router } from "./router/app-router";
 
+import PlanetsList from "./components/PlanetsList/PlanetsList";
+
 function App() {
-  getSolarSystemPlanets();
   return (
-    <div className="App">
+    <div className="container">
       <PlanetContextProvider>
         <RouterProvider router={router} />
-        <h1>hola</h1>
-        <h2>adios</h2>
+        <div>
+          <PlanetsList />
+        </div>
       </PlanetContextProvider>
     </div>
   );
