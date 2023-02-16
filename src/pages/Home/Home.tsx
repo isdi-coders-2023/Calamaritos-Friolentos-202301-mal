@@ -1,4 +1,8 @@
 import "./Home.css";
 export const Home = () => {
-  return <h1>Find your next destination</h1>;
+  return (
+    <div className="home__tittle">
+      <h1>Find your next destination</h1>
+    </div>
+  );
 };
