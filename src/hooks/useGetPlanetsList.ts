@@ -1,17 +1,17 @@
-import { useContext } from "react";
+import { useCallback, useContext } from "react";
 import PlanetContext from "../store/contexts/planetContext.context";
 import { ActionTypes } from "../store/types/Action";
 import { getSolarSystemPlanets } from "../api/planet.data";
 
 export default function useGetPlanetsList() {
   const { planets, dispatch } = useContext(PlanetContext);
-  const getPlanets = async () => {
+  const getPlanets = useCallback(async () => {
     const planetsListData = await getSolarSystemPlanets();
     const planetAction = {
       type: ActionTypes.INITIALIZE_PLANETS,
       payload: planetsListData,
     };
     dispatch(planetAction);
-  };
+  }, [dispatch]);
   return { planets, getPlanets };
 }
