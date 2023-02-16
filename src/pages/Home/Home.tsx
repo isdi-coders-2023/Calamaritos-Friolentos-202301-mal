@@ -3,7 +3,9 @@ import "./Home.css";
 export const Home = () => {
   return (
     <>
-      <h1>Encuentra tu próximo destino</h1>
+      <div className="home__tittle">
+        <h1>Find your next destination</h1>
+      </div>
       <PlanetsList />
     </>
   );
