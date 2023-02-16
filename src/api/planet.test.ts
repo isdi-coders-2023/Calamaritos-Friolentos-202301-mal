@@ -8,7 +8,6 @@ describe("Given Planet API", () => {
   afterAll(() => server.close()); // paramos el server al terminar los test
   test("When get planets, then it should return JSON eight objects for the eight planets in the solar system", async () => {
     const planets: Planet[] = await getSolarSystemPlanets();
-    console.log(planets);
     expect(planets[0].name).toBe("Mercury");
   });
 });

@@ -9,5 +9,3 @@ export interface Planet {
   host_star_mass: number;
   host_star_temperature: number;
 }
-
-//definimos los tipos de datos del planet

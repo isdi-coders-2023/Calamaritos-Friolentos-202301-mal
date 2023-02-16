@@ -2,6 +2,7 @@ import { Planet } from "./planet.model";
 
 export const getSolarSystemPlanets = async () => {
   let planetsListData: Planet[] = [];
+
   const response = await fetch(
     `https://api.api-ninjas.com/v1/planets?max_distance_light_year=0.000479`,
     {
@@ -11,6 +12,7 @@ export const getSolarSystemPlanets = async () => {
       },
     }
   );
+
   planetsListData = await response.json();
 
   return planetsListData;
