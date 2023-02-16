@@ -5,15 +5,12 @@ import { getSolarSystemPlanets } from "../api/planet.data";
 
 export default function useGetPlanetsList() {
   const { planets, dispatch } = useContext(PlanetContext);
-
   const getPlanets = async () => {
     const planetsListData = await getSolarSystemPlanets();
-
     const planetAction = {
-      type: ActionTypes.ADD_PLANETS,
+      type: ActionTypes.INITIALIZE_PLANETS,
       payload: planetsListData,
     };
-
     dispatch(planetAction);
   };
   return { planets, getPlanets };

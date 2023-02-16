@@ -17,6 +17,28 @@ export const handlers = [
           host_star_mass: 1,
           host_star_temperature: 6000,
         },
+        {
+          name: "Mercury",
+          mass: 0.0537,
+          radius: 0.346,
+          period: 59800,
+          semi_major_axis: 30.07,
+          temperature: 72,
+          distance_light_year: 0.000478,
+          host_star_mass: 1,
+          host_star_temperature: 6000,
+        },
+        {
+          name: "Mercury",
+          mass: 0.0537,
+          radius: 0.346,
+          period: 59800,
+          semi_major_axis: 30.07,
+          temperature: 72,
+          distance_light_year: 0.000478,
+          host_star_mass: 1,
+          host_star_temperature: 6000,
+        },
       ])
     );
   }),

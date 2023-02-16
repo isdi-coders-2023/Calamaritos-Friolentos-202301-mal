@@ -1,10 +1,12 @@
 import "./PlanetCard.css";
+import { Planet } from "../../api/planet.model";
+import { FC } from "react";
 
-const PlanetCard = () => {
+const PlanetCard: FC<Planet> = (planet) => {
   return (
-    <li className="card-container">
+    <article className="card-container">
       <div className="planet-title">
-        <p className="planet-name">Mercury</p>
+        <p className="planet-name">{planet.name}</p>
         <button className="favorites-icon on off">
           <img
             alt="Start button"
@@ -16,8 +18,8 @@ const PlanetCard = () => {
       <div className="img-container">
         <img
           className="planet-img"
-          src="./assets/mercury.png"
-          alt="Planet Mercury"
+          src={`./assets/${planet.name}.png`}
+          alt={`Planet ${planet.name}`}
         ></img>
       </div>
 
@@ -28,18 +30,18 @@ const PlanetCard = () => {
       </div>
 
       <ul className="planet-card__info">
-        <li> Masa: 0.000174 J </li>
-        <li>Radio: 0.0341 J</li>
-        <li>Período: 88 días terrestres</li>
-        <li>Semieje mayor: 0.387098 AU</li>
-        <li>Temperatura: 400 K</li>
-        <li>Distancia: 1.1e-05 años luz</li>
+        <li> Masa: {planet.mass} J </li>
+        <li>Radio: {planet.radius} J</li>
+        <li>Período: {planet.period} días terrestres</li>
+        <li>Semieje mayor: {planet.semi_major_axis} AU</li>
+        <li>Temperatura: {planet.temperature} K</li>
+        <li>Distancia: {planet.distance_light_year} años luz</li>
       </ul>
 
       <div className="view-more-button__container ">
         <button className="view-more-button">Ver más</button>
       </div>
-    </li>
+    </article>
   );
 };
 

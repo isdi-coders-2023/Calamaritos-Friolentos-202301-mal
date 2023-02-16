@@ -1,11 +1,9 @@
 .card-container {
   display: flex;
   flex-direction: column;
-  width: 494px;
-  height: 249px;
+  border: 1px solid black;
   align-items: center;
   color: #fafaff;
-  gap: 1rem;
 }
 
 .card-container li {
