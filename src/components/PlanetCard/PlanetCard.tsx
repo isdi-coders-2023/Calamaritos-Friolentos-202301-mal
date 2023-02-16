@@ -24,12 +24,6 @@ const PlanetCard: FC<Planet> = (planet) => {
         ></img>
       </div>
 
-      {/* <div className="planet-eslogan__container">
-        <p className="planet__eslogan">
-          El más cercano al Sol, ¡lleva un buen protector solar!
-        </p>
-      </div> */}
-
       <ul className="planet-card__info">
         <li>
           <div className="list__item"> Radius:&nbsp; </div> {planet.radius} J
@@ -57,7 +51,7 @@ const PlanetCard: FC<Planet> = (planet) => {
       </ul>
 
       <div className="view-more-button__container ">
-        <Link to={`Details`} className="view-more-button">
+        <Link to={`MyFavorites`} className="view-more-button">
           &nbsp;See more&nbsp;
         </Link>
       </div>
