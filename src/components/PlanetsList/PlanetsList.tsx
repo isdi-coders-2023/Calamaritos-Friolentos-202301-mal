@@ -10,7 +10,7 @@ const PlanetsList = () => {
 
   useEffect(() => {
     getPlanets();
-  }, []);
+  }, [getPlanets]);
 
   return (
     <ul className="planets-container">
