@@ -1,19 +1,35 @@
+.home__tittle {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  padding-left: 28px;
+  width: 60%;
+}
+
 h1 {
   color: #fafaff;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 56px;
-  line-height: 66px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (min-width: 1440px) {
+  .home__tittle {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding-left: 290px;
+    width: 45%;
+  }
+
   h1 {
     color: #fafaff;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 3.5rem;
+    line-height: 4.125rem;
   }
 }
