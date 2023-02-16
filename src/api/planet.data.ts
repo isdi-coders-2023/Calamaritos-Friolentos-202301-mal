@@ -8,7 +8,7 @@ export const getSolarSystemPlanets = async () => {
     {
       method: "GET",
       headers: {
-        "X-Api-Key": "X/eFoH5y1gzGiAgQPef9Gw==QUeLPZoIOIQ9j1u1",
+        "X-Api-Key": "FWllBPgSqhCrZIf/rrVwww==n3aubDQQ3v5Se8We",
       },
     }
   );
