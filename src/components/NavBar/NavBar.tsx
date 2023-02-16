@@ -14,7 +14,7 @@ export const NavBar = () => {
       </div>
       <div>
         <Link className="favorites-button" to={`MyFavorites`}>
-          Mis favoritos
+          My favorites
         </Link>
       </div>
     </nav>

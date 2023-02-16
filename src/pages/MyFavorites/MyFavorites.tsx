@@ -1,5 +1,5 @@
 import "./MyFavorites.css";
 
 export const MyFavorites = () => {
-  return <h1>Mis favoritos</h1>;
+  return <h1>My favorites</h1>;
 };

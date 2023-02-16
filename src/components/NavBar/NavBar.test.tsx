@@ -11,7 +11,7 @@ describe("NavBar component", () => {
     );
 
     const logoLink = screen.getByAltText("Space Safari icon");
-    const favoritesLink = screen.getByText("Mis favoritos");
+    const favoritesLink = screen.getByText("My favorites");
 
     expect(logoLink).toBeInTheDocument();
     expect(favoritesLink).toBeInTheDocument();
