@@ -8,6 +8,8 @@ const planetReducer = (
   switch (action.type) {
     case ActionTypes.ADD_PLANETS:
       return [...previousPlanets, ...action.payload];
+    case ActionTypes.INITIALIZE_PLANETS:
+      return [...action.payload];
     default:
       return [...previousPlanets];
   }
