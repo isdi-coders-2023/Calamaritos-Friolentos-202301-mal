@@ -1,4 +1,10 @@
+import PlanetsList from "../../components/PlanetsList/PlanetsList";
 import "./Home.css";
 export const Home = () => {
-  return <h1>Find your next destination</h1>;
+  return (
+    <>
+      <h1>Encuentra tu próximo destino</h1>
+      <PlanetsList />
+    </>
+  );
 };
