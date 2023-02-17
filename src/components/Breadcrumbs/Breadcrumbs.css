@@ -1,0 +1,87 @@
+.breadcrumb a {
+  color: #fafaff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  text-align: left;
+  align-items: center;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.188rem;
+}
+
+.breadcrumb span {
+  color: #797983;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  text-align: left;
+  align-items: center;
+  width: 45%;
+}
+
+.breadcrumb {
+  color: #fafaff;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  padding-left: 28px;
+}
+
+ol {
+  list-style-type: none;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  display: inline-block;
+  margin: 0 0.5rem;
+  content: "/";
+}
+
+@media screen and (min-width: 1440px) {
+  .breadcrumb a {
+    color: #fafaff;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.313rem;
+    text-align: left;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .breadcrumb a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.188rem;
+  }
+
+  .breadcrumb span {
+    color: #797983;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.313rem;
+    text-align: left;
+    align-items: center;
+    width: 45%;
+  }
+
+  .breadcrumb {
+    color: #fafaff;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding-left: 295px;
+  }
+
+  .breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 1rem;
+    content: "/";
+  }
+}
