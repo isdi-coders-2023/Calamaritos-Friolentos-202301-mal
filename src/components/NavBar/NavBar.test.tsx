@@ -2,8 +2,8 @@ import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import { NavBar } from "./NavBar";
 
-describe("NavBar component", () => {
-  test("renders logo and favorites button links", () => {
+describe("Given a nav bar component", () => {
+  test("When rendering the logo and favorites button links is displayed", () => {
     render(
       <BrowserRouter>
         <NavBar />
