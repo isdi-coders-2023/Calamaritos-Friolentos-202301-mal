@@ -1,20 +1,21 @@
 import PlanetCard from "../PlanetCard/PlanetCard";
 import { Planet } from "../../api/planet.model";
 import { useEffect } from "react";
-import useGetPlanetsList from "../../hooks/useGetPlanetsList";
+
 import "../PlanetCard/PlanetCard.css";
 import "./PlanetList.css";
+import useAppHook from "../../hooks/useAppHook";
 
 const PlanetsList = () => {
-  const { planets, getPlanets } = useGetPlanetsList();
+  const { state, fragmentPlanets } = useAppHook();
 
   useEffect(() => {
-    getPlanets();
-  }, [getPlanets]);
+    fragmentPlanets();
+  }, [fragmentPlanets, state.page]);
 
   return (
     <ul className="planets-container">
-      {planets.map((planet: Planet, i) => (
+      {state.planets.map((planet: Planet, i) => (
         <li key={i + "-planet"}>
           <PlanetCard
             name={planet.name}
