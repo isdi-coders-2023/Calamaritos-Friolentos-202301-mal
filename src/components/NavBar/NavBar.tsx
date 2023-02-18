@@ -13,7 +13,7 @@ export const NavBar = () => {
         </Link>
       </div>
       <div>
-        <Link className="favorites-button" to={`MyFavorites`}>
+        <Link className="favorites-button" to={`/Main/MyFavorites`}>
           My favorites
         </Link>
       </div>
