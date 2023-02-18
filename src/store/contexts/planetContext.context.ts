@@ -1,15 +1,15 @@
 import { createContext, Dispatch } from "react";
-import { Planet } from "../../api/planet.model";
-import PlanetAction from "../types/Action";
+import { AppActions } from "../types/Action";
+import { AppState } from "./appInterface.model";
 
-interface PlanetContextProps {
-  planets: Planet[];
-  dispatch: Dispatch<PlanetAction>;
+interface AppContextProps {
+  state: AppState;
+  dispatch: Dispatch<AppActions>;
 }
 
-const PlanetContext = createContext<PlanetContextProps>({
-  planets: [],
+const AppContext = createContext<AppContextProps>({
+  state: { planets: [], page: 1 },
   dispatch: () => {},
 });
 
-export default PlanetContext;
+export default AppContext;

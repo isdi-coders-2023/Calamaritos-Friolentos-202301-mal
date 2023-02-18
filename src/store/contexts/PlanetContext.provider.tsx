@@ -1,20 +1,24 @@
-import { FC, useReducer } from "react";
-import PlanetContext from "./planetContext.context";
-import planetReducer from "../reducers/planetReducer";
+import { FC, Reducer, useReducer } from "react";
 
-interface PlanetContextProviderProps {
+import planetReducer from "../reducers/planetReducer";
+import { AppState } from "./appInterface.model";
+import { AppActions } from "../types/Action";
+import AppContext from "./planetContext.context";
+
+interface AppContextProviderProps {
   children: JSX.Element | JSX.Element[];
 }
 
-const PlanetContextProvider: FC<PlanetContextProviderProps> = ({
-  children,
-}) => {
-  const [planets, dispatch] = useReducer(planetReducer, []);
+const AppContextProvider: FC<AppContextProviderProps> = ({ children }) => {
+  const [state, dispatch] = useReducer<Reducer<AppState, AppActions>>(
+    planetReducer,
+    { planets: [], page: 1 }
+  );
 
   return (
-    <PlanetContext.Provider value={{ planets, dispatch }}>
+    <AppContext.Provider value={{ state, dispatch }}>
       {children}
-    </PlanetContext.Provider>
+    </AppContext.Provider>
   );
 };
-export default PlanetContextProvider;
+export default AppContextProvider;
