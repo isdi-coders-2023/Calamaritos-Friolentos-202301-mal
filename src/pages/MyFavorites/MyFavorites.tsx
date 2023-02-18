@@ -2,7 +2,7 @@ import "./MyFavorites.css";
 import Breadcrumb from "../../components/Breadcrumbs/Breadcrumbs";
 
 const breadcrumbItems = [
-  { name: "Home", link: "/Main/Home" },
+  { name: "Home", link: "/Main" },
   { name: "My favorites", link: "/Main/MyFavorites" },
 ];
 
