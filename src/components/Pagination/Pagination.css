@@ -1,0 +1,15 @@
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pagination__button-left {
+  background-color: inherit;
+  border: none;
+}
+
+.pagination__button-right {
+  background-color: inherit;
+  border: none;
+}
