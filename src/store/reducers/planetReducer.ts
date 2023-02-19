@@ -14,6 +14,8 @@ const planetReducer = (state: AppState, action: AppActions): AppState => {
       return page > 1 ? { ...state, page: page - 1 } : { ...state, page: page };
     case ActionTypes.FRAGMENT_PLANETS_ARRAY:
       return { ...state, planets: action.payload };
+    case ActionTypes.GET_PLANET_DETAIL:
+      return { ...state, planet: action.payload };
 
     default:
       return state;
