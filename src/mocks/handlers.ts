@@ -38,7 +38,7 @@ export const handlers = [
             temperature: 72,
             distance_light_year: 0.000478,
             host_star_mass: 1,
-            host_star_temperature: 6000,
+            host_star_temperature: 6001,
           },
           {
             name: "Mercury",
@@ -49,7 +49,7 @@ export const handlers = [
             temperature: 72,
             distance_light_year: 0.000478,
             host_star_mass: 1,
-            host_star_temperature: 6000,
+            host_star_temperature: 6002,
           },
           {
             name: "Mercury",
@@ -60,7 +60,7 @@ export const handlers = [
             temperature: 72,
             distance_light_year: 0.000478,
             host_star_mass: 1,
-            host_star_temperature: 6000,
+            host_star_temperature: 6003,
           },
         ])
       );
@@ -80,7 +80,7 @@ export const handlers = [
           temperature: 72,
           distance_light_year: 0.000478,
           host_star_mass: 1,
-          host_star_temperature: 6000,
+          host_star_temperature: 6005,
         },
         {
           name: "Mercury",
@@ -91,7 +91,7 @@ export const handlers = [
           temperature: 72,
           distance_light_year: 0.000478,
           host_star_mass: 1,
-          host_star_temperature: 6000,
+          host_star_temperature: 6002,
         },
         {
           name: "Mercury",
@@ -100,7 +100,7 @@ export const handlers = [
           period: 59800,
           semi_major_axis: 30.07,
           temperature: 72,
-          distance_light_year: 0.000478,
+          distance_light_year: 0.00048,
           host_star_mass: 1,
           host_star_temperature: 6000,
         },
