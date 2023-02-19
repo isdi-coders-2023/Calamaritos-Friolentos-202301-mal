@@ -1,6 +1,7 @@
 import { useCallback, useContext } from "react";
 
-import { getSolarSystemPlanets } from "../api/planet.data";
+import { getPlanetByName, getSolarSystemPlanets } from "../api/planet.data";
+import { Planet } from "../api/planet.model";
 
 import AppContext from "../store/contexts/planetContext.context";
 import { ActionTypes, AppActions } from "../store/types/Action";
@@ -53,7 +54,26 @@ const useAppHook = () => {
     [dispatch]
   );
 
-  return { state, goToLeftPage, goToNextPage, fragmentPlanets, getPlanets };
+  const getPlanetDetail = useCallback(
+    async (planet: string) => {
+      const planetDetailData = await getPlanetByName(planet);
+      const PlanetDetailAction: AppActions = {
+        type: ActionTypes.GET_PLANET_DETAIL,
+        payload: planetDetailData,
+      };
+      dispatch(PlanetDetailAction);
+    },
+    [dispatch]
+  );
+
+  return {
+    state,
+    getPlanetDetail,
+    goToLeftPage,
+    goToNextPage,
+    fragmentPlanets,
+    getPlanets,
+  };
 };
 
 export default useAppHook;
