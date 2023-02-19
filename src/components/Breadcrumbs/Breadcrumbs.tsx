@@ -15,7 +15,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
     <nav aria-label="breadcrumb">
       <ol className="breadcrumb">
         {items.map((item, index) => (
-          <li key={index} className="breadcrumb-item">
+          <li key={item.name} className="breadcrumb-item">
             {index === items.length - 1 ? (
               <span>{item.name}</span>
             ) : (
