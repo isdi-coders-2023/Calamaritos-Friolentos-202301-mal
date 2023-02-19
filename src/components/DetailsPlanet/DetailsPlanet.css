@@ -1,0 +1,56 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  align-items: center;
+  color: #fafaff;
+}
+
+.card-container li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.planet-name {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Space Grotesk", sans-serif;
+  vertical-align: top;
+  margin-bottom: 2rem;
+}
+
+.planet-img {
+  height: 15rem;
+  width: 15rem;
+  padding-bottom: 1rem;
+}
+
+.favorites-icon {
+  background-color: inherit;
+  border: none;
+  color: #adadb7;
+  margin-bottom: 2rem;
+  display: none;
+}
+
+.planet-card__info {
+  font-size: 0.875rem;
+  color: #fafaff;
+  text-align: center;
+  line-height: 1.12rem;
+  font-family: "Space Grotesk", sans-serif;
+  margin-top: 2rem;
+  display: none;
+}
+
+.list__item {
+  font-weight: bolder;
+}
+
+.planet-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
