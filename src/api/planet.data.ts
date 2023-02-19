@@ -14,6 +14,9 @@ export const getSolarSystemPlanets = async () => {
   );
 
   planetsListData = await response.json();
+  planetsListData.forEach((planet, i) => {
+    planet.id = i;
+  });
 
   return planetsListData;
 };
