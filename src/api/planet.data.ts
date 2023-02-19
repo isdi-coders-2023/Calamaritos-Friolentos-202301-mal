@@ -17,3 +17,17 @@ export const getSolarSystemPlanets = async () => {
 
   return planetsListData;
 };
+
+export const getPlanetByName = async (name: string) => {
+  const response = await fetch(
+    `https://api.api-ninjas.com/v1/planets?name=${name}`,
+    {
+      method: "GET",
+      headers: {
+        "X-Api-Key": "FWllBPgSqhCrZIf/rrVwww==n3aubDQQ3v5Se8We",
+      },
+    }
+  );
+  const planet: Planet = await response.json();
+  return planet;
+};
