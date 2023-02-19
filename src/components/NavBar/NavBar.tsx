@@ -5,7 +5,7 @@ export const NavBar = () => {
   return (
     <nav className="nav-bar">
       <div className="nav-bar-logo">
-        <Link to="">
+        <Link to="/Main">
           <img
             src="./assets/icons/logo-icon-desktop.svg"
             alt="Space Safari icon"
