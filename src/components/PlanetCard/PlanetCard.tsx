@@ -1,14 +1,27 @@
 import "./PlanetCard.css";
-import { Planet } from "../../api/planet.model";
-import { FC } from "react";
+
+import { FC, useState } from "react";
 import { Link } from "react-router-dom";
+import useGetPlanetsfromApiPrivate from "../../hooks/useGetPlanetsfromApiPrivate";
+import { Planet } from "../../api/planet.model";
 
 const PlanetCard: FC<Planet> = (planet) => {
+  const { addFavPlanet } = useGetPlanetsfromApiPrivate();
+  const [clicked, setClicked] = useState(false);
+  const showClicked = () => {
+    setClicked(!clicked);
+  };
   return (
     <article className="card-container">
       <div className="planet-title">
         <p className="planet-name">{planet.name}</p>
-        <button className="favorites-icon on off">
+        <button
+          className="favorites-icon on off"
+          onClick={() => {
+            showClicked();
+            addFavPlanet(planet);
+          }}
+        >
           <img
             alt="Start button"
             src="/assets/icons/star-icon-active-mobile.svg"
