@@ -1,4 +1,4 @@
-import { FC, Reducer, useReducer } from "react";
+import { FC, Reducer, useMemo, useReducer } from "react";
 
 import planetReducer from "../reducers/planetReducer";
 import { AppState } from "./appInterface.model";
@@ -14,11 +14,9 @@ const AppContextProvider: FC<AppContextProviderProps> = ({ children }) => {
     planetReducer,
     { planets: [], page: 1, planetsApiPrivate: [] }
   );
-
+  const contextValue = useMemo(() => ({ state, dispatch }), [state]);
   return (
-    <AppContext.Provider value={{ state, dispatch }}>
-      {children}
-    </AppContext.Provider>
+    <AppContext.Provider value={contextValue}>{children}</AppContext.Provider>
   );
 };
 export default AppContextProvider;
