@@ -16,7 +16,7 @@ const PlanetsList = () => {
   return (
     <ul className="planets-container">
       {state.planets.map((planet: Planet, i) => (
-        <li key={i + "-planet"}>
+        <li key={planet.name + "list"}>
           <PlanetCard
             name={planet.name}
             mass={planet.mass}
