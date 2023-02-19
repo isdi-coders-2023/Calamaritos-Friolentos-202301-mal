@@ -6,9 +6,6 @@
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 500;
-}
-
-.landing-page__title {
   animation: 3s anim-lineUp ease-out;
 }
 @keyframes anim-lineUp {
@@ -98,8 +95,6 @@ span:nth-child(4) {
 .landing-page__button--mobile {
   padding-top: 2rem;
   color: #fafaff;
-}
-.landing-page__button--mobile {
   animation: 2s anim-lineUp ease-out;
 }
 @keyframes anim-lineUp {
@@ -160,11 +155,6 @@ span:nth-child(4) {
     gap: 2.5rem;
   }
 
-  .landing-page__button--desktop {
-    padding-top: 2rem;
-    color: #fafaff;
-    display: flex;
-  }
   .landing-page__button--desktop:hover {
     transition: transform 0.2s;
     transform: scale(1.5);
@@ -174,6 +164,9 @@ span:nth-child(4) {
     display: none;
   }
   .landing-page__button--desktop {
+    padding-top: 2rem;
+    color: #fafaff;
+    display: flex;
     animation: 2s anim-lineUp ease-out;
   }
   @keyframes anim-lineUp {
