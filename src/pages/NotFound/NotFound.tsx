@@ -11,7 +11,9 @@ const NotFound = () => {
           Sorry, what you are looking for is beyond the limits of our galaxy.
         </h3>
         <div className="home-button-container">
-          <Link className="home-button" to={"/"}>
+
+          <Link className="home-button" to={"/Main"}>
+
             Back to home page
           </Link>
         </div>
