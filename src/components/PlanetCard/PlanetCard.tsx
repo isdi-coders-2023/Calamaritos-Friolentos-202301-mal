@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const PlanetCard: FC<Planet> = (planet) => {
   return (
     <article className="card-container">
-      <div className="planet-title">
+      <div key={planet.name} className="planet-title">
         <p className="planet-name">{planet.name}</p>
         <button className="favorites-icon on off">
           <img
@@ -51,7 +51,7 @@ const PlanetCard: FC<Planet> = (planet) => {
       </ul>
 
       <div className="view-more-button__container ">
-        <Link to={`MyFavorites`} className="view-more-button">
+        <Link to={`details/${planet.name}`} className="view-more-button">
           &nbsp;See more&nbsp;
         </Link>
       </div>
