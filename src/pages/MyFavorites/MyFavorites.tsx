@@ -25,7 +25,7 @@ export const MyFavorites = () => {
       </div>
       <ul className="planets-container">
         {state.planetsApiPrivate.map((planet: Planet, i: number) => (
-          <li key={planet.name}>
+          <li key={planet.name + "favorite"}>
             <PlanetCard
               name={planet.name}
               mass={planet.mass}
