@@ -6,6 +6,7 @@ export enum ActionTypes {
   FRAGMENT_PLANETS_ARRAY = "fragmentPlanetsArray",
   GO_TO_NEXT_PAGE = "goToNextPage",
   GO_TO_PREVIOUS_PAGE = "goToPreviousPage",
+  GET_PLANET_DETAIL = "getPlanetDetail",
 }
 
 export type PlanetAction =
@@ -17,4 +18,9 @@ export type PaginationAction =
   | { type: ActionTypes.GO_TO_NEXT_PAGE; payload: number }
   | { type: ActionTypes.GO_TO_PREVIOUS_PAGE; payload: number };
 
-export type AppActions = PlanetAction | PaginationAction;
+export type PlanetDetailAction = {
+  type: ActionTypes.GET_PLANET_DETAIL;
+  payload: Planet;
+};
+
+export type AppActions = PlanetAction | PaginationAction | PlanetDetailAction;
