@@ -12,7 +12,7 @@ interface AppContextProviderProps {
 const AppContextProvider: FC<AppContextProviderProps> = ({ children }) => {
   const [state, dispatch] = useReducer<Reducer<AppState, AppActions>>(
     planetReducer,
-    { planets: [], page: 1 }
+    { planets: [], page: 1, planetsApiPrivate: [] }
   );
 
   return (
